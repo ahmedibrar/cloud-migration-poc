@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_vpc" "main" {
   cidr_block = "10.0.0.0/16"
   tags = {
-    Name = "zantac-vpc"
+    Name = "companyname-vpc"
   }
 }
 
@@ -16,7 +16,7 @@ resource "aws_subnet" "public" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "zantac-public-subnet"
+    Name = "companyname-public-subnet"
   }
 }
 
@@ -24,7 +24,7 @@ resource "aws_internet_gateway" "igw" {
   vpc_id = aws_vpc.main.id
 
   tags = {
-    Name = "zantac-igw"
+    Name = "companyname-igw"
   }
 }
 
@@ -37,7 +37,7 @@ resource "aws_route_table" "rt" {
   }
 
   tags = {
-    Name = "zantac-route-table"
+    Name = "companyname-route-table"
   }
 }
 
