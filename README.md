@@ -1,6 +1,6 @@
-# Cloud Migration PoC – Zantac Inc. (Publicis Sapient Case Study)
+# Cloud Migration PoC
 
-This repository demonstrates a cloud migration automation scenario for Zantac Inc., focusing on provisioning infrastructure on AWS using **Terraform** and configuring web servers using **Ansible**.
+This repository demonstrates a cloud migration automation scenario focusing on provisioning infrastructure on AWS using **Terraform** and configuring web servers using **Ansible**.
 
 ## 🛠 Tech Stack
 - AWS (VPC, EC2, ALB, ASG, IAM)
@@ -57,4 +57,4 @@ ansible-playbook -i inventory playbook.yml
 - Further security hardening should include HTTPS setup, WAF, and KMS encryption for sensitive data
 
 ## 📄 License
-This project is intended for interview and demonstration purposes.
+NA
