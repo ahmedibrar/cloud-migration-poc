@@ -1,0 +1,18 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+terraform.tfvars
+override.tf
+override.tf.json
+*.tfplan
+
+# Ansible
+*.retry
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,13 @@
+- hosts: all
+  become: true
+  tasks:
+    - name: Change Apache port to 8080
+      lineinfile:
+        path: /etc/httpd/conf/httpd.conf
+        regexp: '^Listen'
+        line: 'Listen 8080'
+
+    - name: Restart Apache
+      service:
+        name: httpd
+        state: restarted
